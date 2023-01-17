@@ -1,0 +1,25 @@
+culturalprogandact:
+  culturalType:
+    PROGRAM:
+      "en": "Program"
+      "fr": "Programme"
+    ACTIVITY:
+      "en": "Activity"
+      "fr": "Activité"
+
+
+  culturalStatus:
+    SCHEDULED:
+      "en": "Scheduled"
+      "fr": "Programmé"
+    PROGRESS:
+      "en": "In Progress"
+      "fr": "En cours"
+    COMPLETED:
+      "en": "Completed"
+      "fr": "Complété"
+    CENCELLED:
+      "en": "Cancelled"
+      "fr": "Annulé"
+
+

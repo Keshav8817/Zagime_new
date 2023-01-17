@@ -1,0 +1,38 @@
+@keyframes loading {
+  0%, 20% {
+    transform: rotate(0deg);
+  } 20%, 40% {
+    transform: rotate(15deg);
+  } 40%, 60% {
+    transform: rotate(0deg);
+  } 60%, 80% {
+    transform: rotate(-15deg);
+  } 80%, 100% {
+    transform: rotate(0deg);
+  }
+}
+
+.preload {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100vw;
+  padding-top: 10vh;
+}
+
+.preload > img {
+  display: block;
+  height: 100px;
+  animation: loading 1s ease-in-out infinite;
+}
+
+.preload > h1 {
+  font-family: sans-serif;
+  text-align: center;
+  color: #da0404;
+  font-size: 20px;
+}
+
+.preload > h1 > span {
+  color: black;
+}

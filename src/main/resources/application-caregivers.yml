@@ -1,0 +1,40 @@
+caregivers:
+  caregiverstatus:
+    ACTIVE:
+      "en": "Active"
+      "fr": "Actif"
+    CLOSED:
+      "en": "Closed"
+      "fr": "Fermé"
+    INACTIVE:
+      "en": "Inactive"
+      "fr": "inactif"
+  caregivertype:
+    KINSHIP CARE:
+      "en": "Kinship Care"
+      "fr": "Soins de parenté"
+    FOSTER HOME:
+      "en": "Foster Home"
+      "fr": "Famille adoptive"
+    ADOPTION:
+      "en": "Adoption"
+      "fr": "Adoption"
+    CUSTOMARY CARE:
+      "en": "Customary Care"
+      "fr": "Soins habituels"
+    GROUP HOME:
+      "en": "Group Home"
+      "fr": "Foyer de groupe"
+    OTHER:
+      "en": "Other"
+      "fr": "Autre"
+  caregiverbackgroundstatus:
+    IN PROGRESS:
+      "en": "In Progress"
+      "fr": "En cours"
+    COMPLETED:
+      "en": "Completed"
+      "fr": "Complété"
+    SCHEDULED:
+      "en": "Scheduled"
+      "fr": "Programmé"

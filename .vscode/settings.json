@@ -1,0 +1,7 @@
+{
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true,
+  },
+  "files.eol": "\r\n",
+  "java.configuration.updateBuildConfiguration": "automatic"
+}

@@ -1,0 +1,49 @@
+reflectoring:
+  trace: true
+server:
+  port: 9088
+#This is to avoid Swagger related version issues
+spring:
+  messages:
+    basename: lang/res
+  mvc:
+    throw-exception-if-no-handler-found: true
+    pathmatch:
+      matching-strategy: ant_path_matcher
+  application:
+    name: ZA-SERVER
+  datasource:
+    url: jdbc:mysql://gigamysql.mysql.database.azure.com:3306/zagime_development
+    username: admin1
+    password: Password@123
+  profiles:
+    include:
+      - participant
+      - initialContact
+      - culturalProgAndAct
+      - caregivers
+      - appointment
+      - staff
+      - additionalstaff
+      - familyhealing
+  servlet:
+    multipart:
+      max-file-size: 10MB
+      max-request-size: 10MB
+  jpa:
+    hibernate:
+      ddl-auto: update
+      naming:
+        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+    generate-ddl: true
+jwt:
+  secret: gigatorb
+logging:
+  level:
+    root:
+    org.springframework.web: ERROR
+    com.howtodoinjava: DEBUG
+    org.hibernate: ERROR
+  pattern:
+    file:%d{yyyy-MMM-dd-HH:mm:ss} %p:%C[%M] %L %m %n
+  file.name: C:/cyfwms-logs/za.log

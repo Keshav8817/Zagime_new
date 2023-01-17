@@ -1,0 +1,41 @@
+appointment:
+  appointmentStatus:
+    SCHEDULED:
+      "en": "Scheduled"
+      "fr": "Programmé"
+    RESCHEDULED:
+      "en": "Rescheduled"
+      "fr": "reporté"
+    COMPLETED:
+      "en": "Completed"
+      "fr": "Complété"
+    CANCELLED:
+      "en": "Cancelled"
+      "fr": "Annulé"
+    MISSED:
+      "en" : "Missed"
+      "fr" : "Manqué"
+  frequency:
+    DAILY:
+      "en": "Daily"
+      "fr": "du quotidien"
+    WEEKLY:
+      "en": "Weekly"
+      "fr": "hebdomadaire"
+    Every Two Weeks:
+      "en": "Every Two Weeks"
+      "fr": "Toutes les deux semaines"
+    MONTHLY:
+      "en": "Monthly"
+      "fr": "mensuelle"
+
+  reminderstatus:
+    SCHEDULED:
+      "en": "Scheduled"
+      "fr": "Programmé"
+    COMPLETED:
+      "en": "Completed"
+      "fr": "Complété"
+    CANCELLED:
+      "en": "Cancelled"
+      "fr": "Annulé"

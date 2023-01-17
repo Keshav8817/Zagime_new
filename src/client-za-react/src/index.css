@@ -1,0 +1,67 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*, *::before, *::after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Roboto', 'Segoe UI', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.hide {
+  display: none;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:focus {
+  transition: background-color 600000s 0s, color 600000s 0s;
+}
+
+.fa-eye {
+  position: absolute;
+  top: 49%;
+  right: 14%;
+  cursor: pointer;
+  color: rgb(7, 7, 7);
+}
+
+.fa-eye-slash{
+ 
+  
+}
+
+.icon{ position: absolute;
+  top: 49%;
+  right: 14%;
+  cursor: pointer;
+  color: rgb(7, 7, 7);}
+
+bg-white-200  border-2 border-gray-200   py-2 px-4 text-gray-700  focus:outline-none focus:bg-white focus:border-purple-500
+  .input{
+    background-color: aliceblue;
+    border: 2px;
+    border-color: gray;
+    overflow-x: 4px;
+    
+  }
+
+  [disabled] {
+    color: rgb(0, 0, 0);
+    /* border:2px solid rgb(0, 0, 0) */
+    opacity: 1;
+
+  }

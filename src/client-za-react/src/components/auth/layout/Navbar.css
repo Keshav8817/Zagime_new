@@ -1,0 +1,26 @@
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+   
+  }
+  
+  li {
+    float: left;
+  }
+ 
+ 
+  
+  li Button:active {
+    background-color: #920b0b;
+  }
+.logout{
+ 
+         float: right;
+         margin-right: 2%;        
+      
+  }
+  li a:hover(.active) {
+    background-color: rgb(201, 36, 165);
+  }

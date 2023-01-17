@@ -1,0 +1,100 @@
+initialcontact:
+  initialContactStatus:
+    PROGRESS:
+      "en": "In Progress"
+      "fr": "En Cours"
+    ACTIVE:
+      "en": "Active"
+      "fr": "Actif"
+    CLOSED:
+      "en": "Closed"
+      "fr": "Fermé"
+
+  initialContactReferral:
+    YES:
+      "en": "Yes"
+      "fr": "Oui"
+    No:
+      "en": "No"
+      "fr": "Non"
+
+  presentConcerns:
+    HEALTH:
+      "en": "Health"
+      "fr": "Santé"
+    ADDICTION:
+      "en": "Addiction"
+      "fr": "Dépendance"
+    ABUSE:
+      "en": "Abuse"
+      "fr": "Abuser de"
+    LEGAL:
+      "en": "Legal"
+      "fr": "Juridique"
+    EMLOYMENT:
+      "en": "Employment"
+      "fr": "Emploi"
+    EDUCATION:
+      "en": "Education"
+      "fr": "Éducation"
+    PARENTING:
+      "en": "Parenting"
+      "fr": "Parentalité"
+    RELATIONSHIPS:
+      "en": "Relationships"
+      "fr": "Des relations"
+    FINANCIAL:
+      "en": "Financial"
+      "fr": "Financier"
+  mentalHealthOrSubstanceAbuse:
+    ALCOHOL:
+      "en": "Alcohol"
+      "fr": "De l'alcool"
+    DRUGS:
+      "en": "Drugs"
+      "fr": "Drogues"
+    NARCOTIC:
+      "en": "Narcotic"
+      "fr": "Narcotique"
+    PILLS:
+      "en": "Pills"
+      "fr": "Pilules"
+    SOLVANTS:
+      "en": "Solvants"
+      "fr": "Solvants"
+    GAMBLING:
+      "en": "Gambling"
+      "fr": "Jeux d'argent"
+    OTHER:
+      "en": "Other"
+      "fr": "Autre"
+  typeOfPatient:
+    OUTPATIENT:
+      "en": "Outpatient"
+      "fr": "Ambulatoire"
+    INPATIENT:
+      "en": "Inpatient"
+      "fr": "Hospitalisé"
+  risk:
+    LOW:
+      "en": "Low"
+      "fr": "Bas"
+    MEDIUM:
+      "en": "Medium"
+      "fr": "Moyen"
+    HIGH:
+      "en": "High"
+      "fr": "haut"
+  contactMethod:
+    VISIT:
+      "en": "Visit"
+      "fr": "Visite"
+    CALL:
+      "en": "Call"
+      "fr": "appel"
+    EMAIL:
+      "en": "Email"
+      "fr": "Email"
+    VIDEOCALL:
+      "en": "VideoCall"
+      "fr": "AppelVidéo"

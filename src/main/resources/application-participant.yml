@@ -1,0 +1,94 @@
+participant:
+  gender:
+    MALE:
+      "en": "Male"
+      "fr": "Mâle"
+    FEMALE:
+      "en": "Female"
+      "fr": "Femelle"
+    LGBTQ:
+      "en": "LGBTQ"
+      "fr": "LGBTQ"
+  maritalStatus:
+    MARRIED:
+      "en": "Married"
+      "fr": "Marié"
+    UNMARRIED:
+      "en": "Unmarried"
+      "fr": "Célibataire"
+    DIVORCE:
+      "en": "Divorced"
+      "fr": "Divorcé"
+  province:
+    DEFAULT:
+      "en": "Saskatchewan"
+      "fr": "Saskatchewan"
+    ALBERTA:
+      "en": "Alberta"
+      "fr": "Alberta"
+    SASKATCHEWAN:
+      "en": "British Columbia"
+      "fr": "Colombie britannique"
+    MANITOBA:
+      "en": "Manitoba"
+      "fr": "Manitoba"
+    NEWBRUNSWICK:
+      "en": "New Brunswick"
+      "fr": "Nouveau-Brunswick"
+    NEWFOUNDLANDANDLABRADOR:
+      "en": "Newfoundland and Labrador"
+      "fr": "Terre Neuve et Labrador"
+    NORTHWESTTERRITORIES:
+      "en": "Northwest Territories"
+      "fr": "Territoires du nord-ouest"
+    NOVASCOTIA:
+      "en": "Nova Scotia"
+      "fr": "Nouvelle Écosse"
+    NUNAVUT:
+      "en": "Nunavut"
+      "fr": "Nunavut"
+    ONTARIO:
+      "en": "Ontario"
+      "fr": "Ontario"
+    PRINCEEDWAEDISLAND:
+      "en": "Prince Edward Island"
+      "fr": "Île du Prince Édouard"
+    QUEBEC:
+      "en": "Quebec"
+      "fr": "Québec"
+
+    YUKON:
+      "en": "Yukon"
+      "fr": "Yukon"
+  role:
+    COUNSELOR:
+      "en": "Counselor"
+      "fr": "Conseiller"
+    CFSWORKER:
+      "en": "CFS Worker"
+      "fr": "CFS Ouvrier"
+
+  education:
+    YES:
+      "en": "Yes"
+      "fr": "Oui"
+    NO:
+      "en": "No"
+      "fr": "Non"
+    MAYBE:
+      "en": "Maybe"
+      "fr": "Peut-être"
+
+  typeOFEmployee:
+    FULLTIME:
+      "en": "Full-Time"
+      "fr": "Plein temps"
+    PARTTIME:
+      "en": "Part-Time"
+      "fr": "Temps partiel"
+    Casual:
+      "en": "Casual"
+      "fr": "Décontracté"
+    JOBSEARCH:
+      "en": "Job Search"
+      "fr": "Recherche d'emploi"

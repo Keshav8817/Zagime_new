@@ -1,0 +1,114 @@
+familyhealing:
+  referralstatus:
+    OPEN:
+      "en": "Open"
+      "fr": "Ouverte"
+    CLOSED:
+      "en": "Closed"
+      "fr": "Fermée"
+
+  referralreasons:
+    ACADEMIC CHALLENGES:
+      "en": "Academic Challenges"
+      "fr": "Défis académiques"
+    ACCESSING AND NAVIGATING SOCIAL SYSTEMS:
+      "en": "Accessing and Navigating Social Systems"
+      "fr": "Accéder et naviguer dans les systèmes sociaux"
+    BULLYING/CYBER BULLING:
+      "en": "Bullying/Cyber Bullying"
+      "fr": "Intimidation/cyberintimidation"
+    COMMUNICATION CHALLENGES:
+      "en": "Communication Challenges"
+      "fr": "Défis de communication"
+    EMOTIONAL PROBLEMS:
+      "en": "Emotional Problems"
+      "fr": "Problèmes émotionnels"
+    EMPLOYMENT CONCERNS:
+      "en": "Employment Concerns"
+      "fr": "Problèmes d'emploi"
+    EXPOSURE TO SUBSTANCE ABUSE:
+      "en": "Exposure to Substance Abuse"
+      "fr": "Exposition à la toxicomanie"
+    FAMILY SUPPORT:
+      "en": "Family Support"
+      "fr": "Soutien familial"
+    FOOD SECURITY:
+      "en": "Food Security"
+      "fr": "La sécurité alimentaire"
+    GANG INVOLVEMENT:
+      "en": "Gang Involvement"
+      "fr": "Implication dans les gangs"
+    GENDER IDENTITY:
+      "en": "Gender Identity"
+      "fr": "Identité de genre"
+    GRIEF AND LOSS:
+      "en": "Grief and Loss"
+      "fr": "Deuil et perte"
+    HEALTH CHALLENGES:
+      "en": "Health Challenges"
+      "fr": "Défis de santé"
+    HOUSING CONCERNS:
+      "en": "Housing Concerns"
+      "fr": "Problèmes de logement"
+    INTIMATE PARTNER VIOLENCE:
+      "en": "Intimate Partner Violence"
+      "fr": "La violence conjugale"
+    LEGAL SUPPORT:
+      "en": "Legal Support"
+      "fr": "Support légal"
+    MENTAL HEALTH:
+      "en": "Mental Health"
+      "fr": "Santé mentale"
+    MENTORING REQUIREMENT:
+      "en": "Mentoring Requirement"
+      "fr": "Exigence de mentorat"
+    PARENT/TEEN CONFLICT:
+      "en": "Parent/Teen conflict"
+      "fr": "Conflit parent/ado"
+    PARENTING SKILLS:
+      "en": "Parenting Skills"
+      "fr": "Aptitudes parentales"
+    PARENTING SUPPORT:
+      "en": "Parenting Support"
+      "fr": "Soutien parental"
+    SELF-HARM:
+      "en": "Self-Harm"
+      "fr": "L'automutilation"
+    SPECIAL NEEDS:
+      "en": "Special Needs"
+      "fr": "Besoins spéciaux"
+    SUBSTANCE ABUSE:
+      "en": "Substance Abuse"
+      "fr": "Abus de substance"
+    TRANSITIONING TO ADULTHOOD:
+      "en": "Transitioning to Adulthood"
+      "fr": "Transition vers l'âge adulte"
+    TRANSPORTATION:
+      "en": "Transportation"
+      "fr": "Transport"
+    TRAUMA:
+      "en": "Trauma"
+      "fr": "Traumatisme"
+    OTHER:
+      "en": "Other"
+      "fr": "Autre"
+
+  consenttype:
+    AUTHORIZATION TO RELEASE CONFIDENTIAL INFORMATION:
+      "en": "Authorization to Release Confidential Information"
+      "fr": "Autorisation de divulguer des informations confidentielles"
+    PHOTOGRAPHY WAIVER:
+      "en": "Photography Waiver"
+      "fr": "Renonciation à la photographie"
+    PROVIDE SERVICES TO MINORS:
+      "en": "Provide Services to Minors"
+      "fr": "Offrir des services aux mineurs"
+    RELEASE OF INFORMATION GENERAL CONSENT FORM:
+      "en": "Release of Information General Consent Form"
+      "fr": "Divulgation d'informations Formulaire de consentement général"
+    OTHER:
+      "en": "Other"
+      "fr": "autre"
+
+
+

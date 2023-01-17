@@ -1,0 +1,47 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# Editor directories and files
+*.njsproj
+*.ntvs*
+*.sln
+*.suo
+*.sw?
+.DS_Store
+.idea
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+
+# Logs
+*.log
+lerna-debug.log*
+logs
+npm-debug.log*
+pnpm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Maven
+node
+
+# Node.js
+*.local
+.pnp
+.pnp.js
+dist
+dist-ssr
+node_modules
+package-lock.json
+yarn.lock
+
+# testing
+/coverage
+
+# production
+/build
+
+# env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local

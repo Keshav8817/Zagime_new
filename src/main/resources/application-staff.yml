@@ -1,0 +1,14 @@
+staff:
+  staffstatus:
+    FULL-TIME:
+      "en": "Full-Time"
+      "fr": "À plein temps"
+    PART-TIME:
+      "en": "Part-Time"
+      "fr": "À temps partiel"
+    TEMPORARY:
+      "en": "Temporary"
+      "fr": "Temporaire"
+    INTERN:
+      "en": "Intern"
+      "fr": "Interne"

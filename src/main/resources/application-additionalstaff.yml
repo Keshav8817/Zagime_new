@@ -1,0 +1,25 @@
+additionalstaff:
+  backgroundstatus:
+    REQUESTED:
+      "en": "Requested"
+      "fr": "Demandée"
+    COMPLETE:
+      "en": "Complete"
+      "fr": "Complète"
+  goalsobjectivestatus:
+    ACTIVE:
+      "en": "Active"
+      "fr": "Active"
+    COMPLETE:
+      "en": "Complete"
+      "fr": "Complète"
+    CANCELLED:
+      "en": "Cancelled"
+      "fr": "Annulé"
+  trainingstatus:
+    ACTIVE:
+      "en": "Scheduled"
+      "fr": "Programmé"
+    COMPLETE:
+      "en": "In-Progress"
+      "fr": "En cours"
