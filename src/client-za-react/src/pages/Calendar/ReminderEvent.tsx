@@ -5,6 +5,8 @@ import {
   TableCell,
   TableHead,
   TableRow,
+  useMediaQuery,
+  useTheme,
 } from "@mui/material";
 import { Link } from "react-router-dom";
 import { grey } from "@mui/material/colors";
@@ -14,6 +16,9 @@ import { ReminderData } from "./CalendarDataType";
 import { getAllReminderByDate } from "./service";
 
 const ReminderEvent: any = (props: any) => {
+  const theme = useTheme();
+
+  const isMatch = useMediaQuery(theme.breakpoints.down("sm"));
   const [data, setData] = useState<ReminderData[]>([
     {
       reminderId: 0,
@@ -43,74 +48,199 @@ const ReminderEvent: any = (props: any) => {
   const handleSelected = (id: number, participant: number) => {};
   return (
     <div>
-      <Table sx={{ minWidth: 600 }} aria-label="simple table">
-        <TableHead>
-          <TableRow sx={{ backgroundColor: "orange", color: "white" }}>
-            <TableCell
-              sx={{ color: "white" }}
-              align="center"
-              size="small"
-            ></TableCell>
-            <TableCell sx={{ color: "white" }} align="center" size="small">
-              Date
-            </TableCell>
-            <TableCell sx={{ color: "white" }} align="center" size="small">
-              Subject
-            </TableCell>
-            <TableCell sx={{ color: "white" }} align="center" size="small">
-              Status
-            </TableCell>
-          </TableRow>
-        </TableHead>
-        <TableBody
-          sx={{
-            "& > tr > td": {
-              backgroundColor: grey["400"],
-              p: "0.25rem",
-            },
-            "& > tr": { border: 0 },
-          }}
-        >
-          {data.map((val: any, key: any) => (
-            <TableRow
+      {isMatch ? (
+        <>
+          <Table sx={{ width: 380 }} aria-label="simple table">
+            <TableHead>
+              <TableRow sx={{ backgroundColor: "orange", color: "white" }}>
+                <TableCell
+                  sx={{ color: "white", width: 10 }}
+                  align="center"
+                  size="small"
+                ></TableCell>
+                <TableCell
+                  sx={{ color: "white", width: 10 }}
+                  align="center"
+                  size="small"
+                >
+                  Date
+                </TableCell>
+                <TableCell
+                  sx={{ color: "white", width: 10 }}
+                  align="center"
+                  size="small"
+                >
+                  Subject
+                </TableCell>
+                <TableCell
+                  sx={{ color: "white", width: 10 }}
+                  align="center"
+                  size="small"
+                >
+                  Status
+                </TableCell>
+              </TableRow>
+            </TableHead>
+            <TableBody
               sx={{
-                "&:last-child td, &:last-child th": { border: 0 },
+                "& > tr > td": {
+                  backgroundColor: grey["400"],
+                  p: "0.25rem",
+                },
+                "& > tr": { border: 0 },
               }}
             >
-              <TableCell sx={{ color: "black" }} align="center" size="small">
-                {val.participantId && (
-                  <Link
-                    to={`../cyfms/reminder/${val.participantId}`}
-                    onClick={() => {}}
+              {data.map((val: any, key: any) => (
+                <TableRow
+                  sx={{
+                    "&:last-child td, &:last-child th": { border: 0 },
+                  }}
+                >
+                  <TableCell
+                    sx={{ color: "black" }}
+                    align="center"
+                    size="small"
                   >
-                    Select
-                  </Link>
-                )}
+                    {val.participantId && (
+                      <Link
+                        to={`../cyfms/reminder/${val.participantId}`}
+                        onClick={() => {}}
+                      >
+                        Select
+                      </Link>
+                    )}
 
-                {val.fileDetailsId && (
-                  <Link
-                    to={`../initial_contact/reminder/${val.fileDetailsId}`}
-                    onClick={() => {
-                      localStorage.setItem("filedetailsId", val.fileDetailsId);
-                    }}
+                    {val.fileDetailsId && (
+                      <Link
+                        to={`../initial_contact/reminder/${val.fileDetailsId}`}
+                        onClick={() => {
+                          localStorage.setItem(
+                            "filedetailsId",
+                            val.fileDetailsId
+                          );
+                        }}
+                      >
+                        Select
+                      </Link>
+                    )}
+                  </TableCell>
+                  <TableCell
+                    sx={{ color: "black" }}
+                    align="center"
+                    size="small"
                   >
-                    Select
-                  </Link>
-                )}
-              </TableCell>
-              <TableCell sx={{ color: "black" }} align="center" size="small">
-                {val.reminderDate}
-              </TableCell>
-              <TableCell sx={{ color: "black" }} align="center" size="small">
-                {val.subject}
-              </TableCell>
-              <TableCell sx={{ color: "black" }} align="center" size="small">
-                {val.status}
-              </TableCell>
-            </TableRow>
-          ))}
-        </TableBody>
-      </Table>
+                    {val.reminderDate}
+                  </TableCell>
+                  <TableCell
+                    sx={{ color: "black" }}
+                    align="center"
+                    size="small"
+                  >
+                    {val.subject}
+                  </TableCell>
+                  <TableCell
+                    sx={{ color: "black" }}
+                    align="center"
+                    size="small"
+                  >
+                    {val.status}
+                  </TableCell>
+                </TableRow>
+              ))}
+            </TableBody>
+          </Table>
+        </>
+      ) : (
+        <>
+          <Table sx={{ minWidth: 600 }} aria-label="simple table">
+            <TableHead>
+              <TableRow sx={{ backgroundColor: "orange", color: "white" }}>
+                <TableCell
+                  sx={{ color: "white" }}
+                  align="center"
+                  size="small"
+                ></TableCell>
+                <TableCell sx={{ color: "white" }} align="center" size="small">
+                  Date
+                </TableCell>
+                <TableCell sx={{ color: "white" }} align="center" size="small">
+                  Subject
+                </TableCell>
+                <TableCell sx={{ color: "white" }} align="center" size="small">
+                  Status
+                </TableCell>
+              </TableRow>
+            </TableHead>
+            <TableBody
+              sx={{
+                "& > tr > td": {
+                  backgroundColor: grey["400"],
+                  p: "0.25rem",
+                },
+                "& > tr": { border: 0 },
+              }}
+            >
+              {data.map((val: any, key: any) => (
+                <TableRow
+                  sx={{
+                    "&:last-child td, &:last-child th": { border: 0 },
+                  }}
+                >
+                  <TableCell
+                    sx={{ color: "black" }}
+                    align="center"
+                    size="small"
+                  >
+                    {val.participantId && (
+                      <Link
+                        to={`../cyfms/reminder/${val.participantId}`}
+                        onClick={() => {}}
+                      >
+                        Select
+                      </Link>
+                    )}
+
+                    {val.fileDetailsId && (
+                      <Link
+                        to={`../initial_contact/reminder/${val.fileDetailsId}`}
+                        onClick={() => {
+                          localStorage.setItem(
+                            "filedetailsId",
+                            val.fileDetailsId
+                          );
+                        }}
+                      >
+                        Select
+                      </Link>
+                    )}
+                  </TableCell>
+                  <TableCell
+                    sx={{ color: "black" }}
+                    align="center"
+                    size="small"
+                  >
+                    {val.reminderDate}
+                  </TableCell>
+                  <TableCell
+                    sx={{ color: "black" }}
+                    align="center"
+                    size="small"
+                  >
+                    {val.subject}
+                  </TableCell>
+                  <TableCell
+                    sx={{ color: "black" }}
+                    align="center"
+                    size="small"
+                  >
+                    {val.status}
+                  </TableCell>
+                </TableRow>
+              ))}
+            </TableBody>
+          </Table>
+        </>
+      )}
     </div>
   );
 };

@@ -3,13 +3,15 @@ import moment from "moment";
 import "react-big-calendar/lib/css/react-big-calendar.css";
 import "../../index.css";
 import { Box, Typography } from "@mui/material";
+
 import AuthLayout from "../../components/auth/layout/AuthLayout";
 import { useCallback, useEffect, useState } from "react";
+import { useMediaQuery, useTheme } from "@mui/material";
+
 import AppointmentEvent from "./AppointmentEvent";
 
 import ReminderEvent from "./ReminderEvent";
 import { getAllCaledarData } from "./service";
-import { AppointmentData } from "./CalendarDataType";
 
 const localizer = momentLocalizer(moment);
 
@@ -27,6 +29,9 @@ const Calendar_ = (props: any) => {
     moment(new Date()).format(" ddd, DD MMM yyyy ")
   );
   const [selectedDate, setSelectedDate] = useState("");
+  const theme = useTheme();
+
+  const isMatch = useMediaQuery(theme.breakpoints.down("sm"));
 
   useEffect(() => {
     getAllCaledarData().then(({ data }) => {
@@ -79,62 +84,129 @@ const Calendar_ = (props: any) => {
             padding: "1%",
           }}
         >
-          <Box sx={{ display: "flex", flexWrap: "wrap", gap: "0 0rem" }}>
-            <Box sx={{ flexBasis: 0, flexGrow: 1 }}>
-              <Calendar
-                selectable
-                className="rbc-button-link rbc-show-more rbc-month-view "
-                events={newEvent}
-                startAccessor="start"
-                endAccessor="end"
-                onSelectEvent={handleEvent}
-                defaultDate={moment(new Date()).toDate()}
-                min={new Date(0, 0, 0, 9, 0, 0)}
-                localizer={localizer}
-                onDoubleClickEvent={showEvent}
-                eventPropGetter={(isSelected: any) => ({
-                  isSelected,
-                  style: { backgroundColor: "orange", color: "white" },
-                })}
-                dayPropGetter={dayPropGetter}
-                style={{
-                  display: "flex",
-                  justifyContent: "center",
-                  alignItems: "center",
-                  height: "400px",
-                  width: "600px",
-                }}
-                onSelectSlot={selectedSlot}
-                views={{ month: true }}
-              />
-            </Box>
-            <Box sx={{ flexBasis: 0, flexGrow: 1 }}>
-              <Typography sx={{ fontWeight: 1000 }}>Appointments</Typography>
-              <Box
-                sx={{
-                  height: 180,
-                  flexBasis: 0,
-                  flexGrow: 1,
-                  overflow: "hidden",
-                  overflowY: "scroll",
-                }}
-              >
-                <AppointmentEvent date={selectedDate} />
+          {isMatch ? (
+            <>
+              <Box sx={{ display: "flex", flexWrap: "wrap", gap: "0 0rem" }}>
+                <Box sx={{ flexBasis: 0, flexGrow: 1 }}>
+                  <Calendar
+                    selectable
+                    className="rbc-button-link rbc-show-more rbc-month-view "
+                    events={newEvent}
+                    startAccessor="start"
+                    endAccessor="end"
+                    onSelectEvent={handleEvent}
+                    defaultDate={moment(new Date()).toDate()}
+                    min={new Date(0, 0, 0, 9, 0, 0)}
+                    localizer={localizer}
+                    onDoubleClickEvent={showEvent}
+                    eventPropGetter={(isSelected: any) => ({
+                      isSelected,
+                      style: { backgroundColor: "orange", color: "white" },
+                    })}
+                    dayPropGetter={dayPropGetter}
+                    style={{
+                      display: "flex",
+                      justifyContent: "center",
+                      alignItems: "center",
+                      height: "280px",
+                      width: "380px",
+                    }}
+                    onSelectSlot={selectedSlot}
+                    views={{ month: true }}
+                  />
+                </Box>
+                <Box sx={{ flexBasis: 0, flexGrow: 1 }}>
+                  <Typography sx={{ fontWeight: 1000 }}>
+                    Appointments
+                  </Typography>
+                  <Box
+                    sx={{
+                      height: 180,
+                      flexBasis: 0,
+                      flexGrow: 1,
+                      overflow: "hidden",
+                      overflowY: "scroll",
+                    }}
+                  >
+                    <AppointmentEvent date={selectedDate} />
+                  </Box>
+                  <Typography sx={{ fontWeight: 1000 }}>Reminders</Typography>
+                  <Box
+                    sx={{
+                      height: 180,
+                      flexBasis: 0,
+                      flexGrow: 1,
+                      overflow: "hidden",
+                      overflowY: "scroll",
+                    }}
+                  >
+                    <ReminderEvent date={selectedDate} />
+                  </Box>
+                </Box>
               </Box>
-              <Typography sx={{ fontWeight: 1000 }}>Reminders</Typography>
-              <Box
-                sx={{
-                  height: 180,
-                  flexBasis: 0,
-                  flexGrow: 1,
-                  overflow: "hidden",
-                  overflowY: "scroll",
-                }}
-              >
-                <ReminderEvent date={selectedDate} />
+            </>
+          ) : (
+            <>
+              <Box sx={{ display: "flex", flexWrap: "wrap", gap: "0 0rem" }}>
+                <Box sx={{ flexBasis: 0, flexGrow: 1 }}>
+                  <Calendar
+                    selectable
+                    className="rbc-button-link rbc-show-more rbc-month-view "
+                    events={newEvent}
+                    startAccessor="start"
+                    endAccessor="end"
+                    onSelectEvent={handleEvent}
+                    defaultDate={moment(new Date()).toDate()}
+                    min={new Date(0, 0, 0, 9, 0, 0)}
+                    localizer={localizer}
+                    onDoubleClickEvent={showEvent}
+                    eventPropGetter={(isSelected: any) => ({
+                      isSelected,
+                      style: { backgroundColor: "orange", color: "white" },
+                    })}
+                    dayPropGetter={dayPropGetter}
+                    style={{
+                      display: "flex",
+                      justifyContent: "center",
+                      alignItems: "center",
+                      height: "400px",
+                      width: "600px",
+                    }}
+                    onSelectSlot={selectedSlot}
+                    views={{ month: true }}
+                  />
+                </Box>
+                <Box sx={{ flexBasis: 0, flexGrow: 1 }}>
+                  <Typography sx={{ fontWeight: 1000 }}>
+                    Appointments
+                  </Typography>
+                  <Box
+                    sx={{
+                      height: 180,
+                      flexBasis: 0,
+                      flexGrow: 1,
+                      overflow: "hidden",
+                      overflowY: "scroll",
+                    }}
+                  >
+                    <AppointmentEvent date={selectedDate} />
+                  </Box>
+                  <Typography sx={{ fontWeight: 1000 }}>Reminders</Typography>
+                  <Box
+                    sx={{
+                      height: 180,
+                      flexBasis: 0,
+                      flexGrow: 1,
+                      overflow: "hidden",
+                      overflowY: "scroll",
+                    }}
+                  >
+                    <ReminderEvent date={selectedDate} />
+                  </Box>
+                </Box>
               </Box>
-            </Box>
-          </Box>
+            </>
+          )}
         </Box>
       </AuthLayout>
     </>
