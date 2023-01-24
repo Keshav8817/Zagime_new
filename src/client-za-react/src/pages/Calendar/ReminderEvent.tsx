@@ -50,7 +50,7 @@ const ReminderEvent: any = (props: any) => {
     <div>
       {isMatch ? (
         <>
-          <Table sx={{ width: 380 }} aria-label="simple table">
+          <Table sx={{ width: 369 }} aria-label="simple table">
             <TableHead>
               <TableRow sx={{ backgroundColor: "orange", color: "white" }}>
                 <TableCell

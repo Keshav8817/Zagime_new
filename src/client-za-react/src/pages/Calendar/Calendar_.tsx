@@ -109,7 +109,7 @@ const Calendar_ = (props: any) => {
                       justifyContent: "center",
                       alignItems: "center",
                       height: "280px",
-                      width: "380px",
+                      width: "370px",
                     }}
                     onSelectSlot={selectedSlot}
                     views={{ month: true }}
